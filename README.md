@@ -1,6 +1,6 @@
 # React Heatmap
 
-__COMPONENT DESCRIPTION GOES HERE__
+A very simple port of `heatmap.js` for `React`. The idea behind this component is to be able to display a heatmap over any type of content (image, div, components ...). By default, the heatmap will always take all available width and height of its container.
 
 
 ## Demo & Examples
@@ -30,21 +30,15 @@ npm install react-heatmap --save
 
 ## Usage
 
-__EXPLAIN USAGE HERE__
+This component is pretty straightforward and only expecting 2 simple parameters (`max` and `data`; if you're unfamiliar with these, take a look at the [`heatmap.js documentation`](http://www.patrick-wied.at/static/heatmapjs));
 
 ```
 var ReactHeatmap = require('react-heatmap');
 
-<ReactHeatmap>Example</ReactHeatmap>
+let data = [{ x: 10, y: 15, value: 5}, { x: 50, y: 50, value: 2}, ...];
+
+<ReactHeatmap max={5} data={data} />
 ```
-
-### Properties
-
-* __DOCUMENT PROPERTIES HERE__
-
-### Notes
-
-__ADDITIONAL USAGE NOTES__
 
 
 ## Development (`src`, `lib` and the build process)
@@ -57,5 +51,5 @@ To build, watch and serve the examples (which will also watch the component sour
 
 __PUT LICENSE HERE__
 
-Copyright (c) 2016 Jonathan Widawski.
+[MIT License](https://en.wikipedia.org/wiki/MIT_License) Copyright (c) 2016 Jonathan Widawski.
 

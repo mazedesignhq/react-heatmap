@@ -1,6 +1,6 @@
 {
   "name": "react-heatmap",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "React Heatmap",
   "main": "lib/ReactHeatmap.js",
   "author": "Jonathan Widawski",
@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "classnames": "^2.1.2",
-    "heatmap.js": "^2.0.1"
+    "heatmap.js": "git+https://github.com/JonathanWi/heatmap.js.git",
+    "heatmapjs": "git+https://github.com/JonathanWi/heatmap.js.git",
+    "nuka-carousel": "^1.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.3",

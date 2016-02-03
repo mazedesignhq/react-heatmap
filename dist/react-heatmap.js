@@ -1,11 +1,11 @@
 (function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.ReactHeatmap = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*
- * heatmap.js v2.0.1 | JavaScript Heatmap Library
+ * heatmapjs v2.0.1 | JavaScript Heatmap Library
  *
  * Copyright 2008-2014 Patrick Wied <heatmapjs@patrick-wied.at> - All rights reserved.
  * Dual licensed under MIT and Beerware license 
  *
- * :: 2015-07-21 01:00
+ * :: 2016-02-03 23:43
  */
 ;(function (name, context, factory) {
 
@@ -726,9 +726,9 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _node_modulesHeatmapJsHeatmapJs = require('../node_modules/heatmap.js/heatmap.js');
+var _heatmapjsBuildHeatmapJs = require('heatmapjs/build/heatmap.js');
 
-var _node_modulesHeatmapJsHeatmapJs2 = _interopRequireDefault(_node_modulesHeatmapJsHeatmapJs);
+var _heatmapjsBuildHeatmapJs2 = _interopRequireDefault(_heatmapjsBuildHeatmapJs);
 
 var ReactHeatmap = (function (_Component) {
 	_inherits(ReactHeatmap, _Component);
@@ -743,7 +743,7 @@ var ReactHeatmap = (function (_Component) {
 	_createClass(ReactHeatmap, [{
 		key: 'componentDidMount',
 		value: function componentDidMount() {
-			this.heatmap = _node_modulesHeatmapJsHeatmapJs2['default'].create({
+			this.heatmap = _heatmapjsBuildHeatmapJs2['default'].create({
 				container: _reactDom2['default'].findDOMNode(this)
 			});
 			this.setData(this.props.max, this.props.data);
@@ -785,5 +785,5 @@ exports['default'] = ReactHeatmap;
 module.exports = exports['default'];
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../node_modules/heatmap.js/heatmap.js":1,"react-dom":undefined}]},{},[2])(2)
+},{"heatmapjs/build/heatmap.js":1,"react-dom":undefined}]},{},[2])(2)
 });

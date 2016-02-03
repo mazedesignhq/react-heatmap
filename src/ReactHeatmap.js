@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-import Heatmap from '../node_modules/heatmap.js/heatmap.js'
+import Heatmap from 'heatmapjs/build/heatmap.js'
 
 class ReactHeatmap extends Component {
 

@@ -1,6 +1,6 @@
 {
   "name": "react-heatmap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Heatmap",
   "main": "lib/ReactHeatmap.js",
   "author": "Jonathan Widawski",

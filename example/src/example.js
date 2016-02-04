@@ -23,8 +23,8 @@ var App = React.createClass({
 		let data = [];
 		let dotsCount = this.randFromInterval(2, 30);
 		for(let i = 0; i < dotsCount; i++) {
-			let x = this.randFromInterval(0, 200);
-			let y = this.randFromInterval(0, 200);
+			let x = this.randFromInterval(1, 200);
+			let y = this.randFromInterval(1, 200);
 			let value = this.randFromInterval(1, 5);
 			data.push({x:x,y:y,value:value});
 		}
@@ -34,7 +34,7 @@ var App = React.createClass({
 	render () {
 		return (
 			<div style={{width: 200, height: 200}}>
-				<ReactHeatmap max={5} data={this.state.data} />
+				<ReactHeatmap max={5} data={this.state.data} unit="pixels" />
 				<div style={{marginTop:40}}>
 					<button onClick={this.setRandomData}>Randomize data</button>
 				</div>

@@ -23,8 +23,23 @@ class ReactHeatmap extends Component {
 	setData(max, data) {
 		this.heatmap.setData({
 		  max: max,
-		  data: data
+		  data: this.computeData(data)
 		});
+	}
+
+	computeData(data) {
+		if(this.props.unit === 'percent') {
+			let container = {};
+			container.width = ReactDOM.findDOMNode(this).offsetWidth;
+			container.height = ReactDOM.findDOMNode(this).offsetHeight;
+			return data.map(function(values, index) {
+				values.x = values.x/100 * container.width;
+				values.y = values.y/100 * container.height;
+				return values;
+			})
+		} else {
+			return data;
+		}
 	}
 
 	render () {
@@ -36,12 +51,14 @@ class ReactHeatmap extends Component {
 
 ReactHeatmap.propTypes = {
 	max : React.PropTypes.number,
-	data : React.PropTypes.array
+	data : React.PropTypes.array,
+	unit : React.PropTypes.string
 }
 
 ReactHeatmap.defaultProps = {
 	max: 5,
-	data: []
+	data: [],
+	unit: 'percent'
 }
 
 export default ReactHeatmap

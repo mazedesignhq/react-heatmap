@@ -40,6 +40,19 @@ let data = [{ x: 10, y: 15, value: 5}, { x: 50, y: 50, value: 2}, ...];
 <ReactHeatmap max={5} data={data} />
 ```
 
+## Properties
+
+
+General component description.
+
+Props
+-----
+Prop                  | Type     | Default                   | Required | Description
+--------------------- | -------- | ------------------------- | -------- | -----------
+max|int|5|No|Maximum value for intensity
+data|array|[]|No|Heatmap array of dots
+unit|string|percent|No|Can be either `percent` or `pixels`. If percent, a `x` value like `26` is considered **26% of the container from the top right**
+
 
 ## Development (`src`, `lib` and the build process)
 

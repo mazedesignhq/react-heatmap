@@ -27,8 +27,8 @@ var App = React.createClass({
 		var data = [];
 		var dotsCount = this.randFromInterval(2, 30);
 		for (var i = 0; i < dotsCount; i++) {
-			var x = this.randFromInterval(0, 200);
-			var y = this.randFromInterval(0, 200);
+			var x = this.randFromInterval(1, 200);
+			var y = this.randFromInterval(1, 200);
 			var value = this.randFromInterval(1, 5);
 			data.push({ x: x, y: y, value: value });
 		}
@@ -39,7 +39,7 @@ var App = React.createClass({
 		return React.createElement(
 			'div',
 			{ style: { width: 200, height: 200 } },
-			React.createElement(ReactHeatmap, { max: 5, data: this.state.data }),
+			React.createElement(ReactHeatmap, { max: 5, data: this.state.data, unit: 'pixels' }),
 			React.createElement(
 				'div',
 				{ style: { marginTop: 40 } },

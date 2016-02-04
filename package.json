@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "classnames": "^2.1.2",
-    "heatmapjs": "^2.0.2"
+    "heatmapjs": "git+https://github.com/JonathanWi/heatmap.js.git"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.3",

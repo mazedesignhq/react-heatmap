@@ -1,6 +1,6 @@
 {
   "name": "react-heatmap",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "React Heatmap",
   "main": "lib/ReactHeatmap.js",
   "author": "Jonathan Widawski",
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "classnames": "^2.1.2",
-    "heatmap.js": "^2.0.1"
+    "heatmapjs": "^2.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.3",

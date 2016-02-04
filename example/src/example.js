@@ -23,8 +23,8 @@ var App = React.createClass({
 		let data = [];
 		let dotsCount = this.randFromInterval(2, 30);
 		for(let i = 0; i < dotsCount; i++) {
-			let x = this.randFromInterval(0, 200);
-			let y = this.randFromInterval(0, 200);
+			let x = this.randFromInterval(1, 100);
+			let y = this.randFromInterval(1, 100);
 			let value = this.randFromInterval(1, 5);
 			data.push({x:x,y:y,value:value});
 		}

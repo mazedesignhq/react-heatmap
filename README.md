@@ -9,7 +9,7 @@ Live demo: [JonathanWi.github.io/react-heatmap](http://JonathanWi.github.io/reac
 
 To build the examples locally, run:
 
-```
+```bash
 npm install
 npm start
 ```
@@ -23,7 +23,7 @@ The easiest way to use react-heatmap is to install it from NPM and include it in
 
 You can also use the standalone build by including `dist/react-heatmap.js` in your page. If you use this, make sure you have already included React, and it is available as a global variable.
 
-```
+```bash
 npm install react-heatmap --save
 ```
 
@@ -32,10 +32,10 @@ npm install react-heatmap --save
 
 This component is pretty straightforward and only expecting 2 simple parameters (`max` and `data`; if you're unfamiliar with these, take a look at the [`heatmap.js documentation`](http://www.patrick-wied.at/static/heatmapjs));
 
-```
-var ReactHeatmap = require('react-heatmap');
+```js
+const ReactHeatmap = require('react-heatmap');
 
-let data = [{ x: 10, y: 15, value: 5}, { x: 50, y: 50, value: 2}, ...];
+const data = [{ x: 10, y: 15, value: 5}, { x: 50, y: 50, value: 2}, ...];
 
 <ReactHeatmap max={5} data={data} />
 ```

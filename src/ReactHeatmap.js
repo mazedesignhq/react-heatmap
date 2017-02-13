@@ -35,7 +35,8 @@ class ReactHeatmap extends Component {
 			return data.map(function(values, index) {
 				return {
 					x : values.x/100 * container.width,
-					y : values.y/100 * container.height
+					y : values.y/100 * container.height,
+					value: values.value
 				}
 			})
 		} else {

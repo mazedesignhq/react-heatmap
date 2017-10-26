@@ -35,8 +35,8 @@ class ReactHeatmap extends Component {
 			container.height = ReactDOM.findDOMNode(this).offsetHeight;
 			return data.map(function(values, index) {
 				return {
-					x : values.x/100 * container.width,
-					y : values.y/100 * container.height,
+					x : Math.round(values.x/100 * container.width),
+					y : Math.round(values.y/100 * container.height),
 					value: values.value
 				}
 			})

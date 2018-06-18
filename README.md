@@ -1,5 +1,7 @@
 # React Heatmap
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mazedesignhq/react-heatmap.svg)](https://greenkeeper.io/)
+
 A very simple port of `heatmap.js` for `React`. The idea behind this component is to be able to display a heatmap over any type of content (image, div, components ...). By default, the heatmap will always take all available width and height of its container.
 
 
